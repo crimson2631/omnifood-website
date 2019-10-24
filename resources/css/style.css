@@ -16,6 +16,18 @@ html {
     text-rendering: optimizeLegibility;
 }
 
+.clearfix {
+    zoom: 1
+}
+
+.clearfix:after {
+    content: '';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
 /* ------------------------------------------------- */
 /*REUSABLE COMPONENTS */
 /* ------------------------------------------------- */
@@ -29,7 +41,7 @@ section {
 }
 
 .box {
-    padding:1%;
+    padding: 1%;
 }
 
 h1,
@@ -60,7 +72,7 @@ h2:after {
     display: block;
     height: 2px;
     background-color: #e67e22;
-    content:" ";
+    content: " ";
     width: 100px;
     margin: 0 auto;
     margin-top: 30px;
@@ -92,6 +104,38 @@ h3 {
     display: block;
     color: #e67e22;
     margin-bottom: 10px;
+}
+
+.icon-small {
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    color: #e67e22;
+    font-size: 120%;
+    margin-right: 10px;
+    line-height: 120%;
+    vertical-align: baseline;
+
+    /*another way to align text and icons
+    vertical-align: middle;
+    margin-top: -5px;*/
+}
+
+/* ----------LINKS----------- */
+
+a:link,
+a:visited {
+    color: #e67e22;
+    text-decoration: none;
+    padding-bottom: 1px;
+    border-bottom: 1px solid #e67e22;
+    transition: border-bottom 0.2s, color 0.2s;
+}
+
+a:hover,
+a:active {
+    color: #555555;
+    border-bottom: 1px solid transparent;
 }
 
 /* ----------BUTTONS----------- */
@@ -145,6 +189,7 @@ header {
     background-size: cover;
     background-position: center;
     height: 100vh;
+    background-attachment: fixed;
 }
 
 .hero-text-box {
@@ -207,7 +252,7 @@ header {
 
 .meals-showcase {
     list-style: none;
-    width:100%;
+    width: 100%;
 }
 
 .meals-showcase li {
@@ -240,6 +285,10 @@ header {
 /*HOW IT WORKS */
 /* ------------------------------------------------- */
 
+.section-steps {
+    background-color: #f4f4f4;
+}
+
 .steps-box:first-child {
     text-align: right;
     padding-right: 3%;
@@ -263,7 +312,6 @@ header {
     margin-bottom: 80px;
 }
 
-
 .works-step div {
     color: #e67e22;
     border: 2px solid #e67e22;
@@ -278,8 +326,27 @@ header {
     margin-right: 25px;
 }
 
+.btn-app:link,
+.btn-app:visited {
+    border: 0;
+}
+
 .btn-app img {
     height: 50px;
     width: auto;
-    margin-right:10px;
+    margin-right: 10px;
+}
+
+/* ------------------------------------------------- */
+/*CITIES */
+/* ------------------------------------------------- */
+
+.box img {
+    width: 100%;
+    height: auto;
+    margin: 15px;
+}
+
+.city-feature {
+    margin-bottom: 5px;
 }
