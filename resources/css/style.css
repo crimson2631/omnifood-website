@@ -350,3 +350,21 @@ header {
 .city-feature {
     margin-bottom: 5px;
 }
+
+/* ------------------------------------------------- */
+/*TESTIMONIALS */
+/* ------------------------------------------------- */
+
+.section-testimonials {
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(img/back-customers.jpg);
+    background-size: cover;
+    color: #fff;
+    background-attachment: fixed;
+}
+
+blockquote {
+    padding: 25px;
+    font-style: italic;
+    line-height: 145%;
+
+}
