@@ -54,8 +54,22 @@
     }
     
     
-    .main-nav { display: none; }
+    /* .main-nav { display: none; } */
+
     .mobile-nav-icon {display: inline-block;}
+
+    .main-nav {
+        float: left;
+    }
+
+    .main-nav li {
+        display: block;
+    }
+    .main-nav li a:link,
+    .main-nav li a:visited {
+        display: block;
+        border: 0;
+    }
     
     .main-nav {
         float: left;
